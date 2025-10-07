@@ -1,0 +1,82 @@
+*,
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf5ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #645575;
+}
+
+.recipe-background {
+    width: 950px;
+    background-color: #a99cb8;
+    border: 2px solid #a99cb8;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 100px auto;
+}
+
+.recipe-card {
+    width: 850px;
+    background-color: #faf5ff;
+    border: 2px solid #faf5ff;
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.opening,
+.closing {
+    font-size: 20px;
+}
+
+.opening {
+    font-weight: bold;
+}
+
+.recipe-menu {
+    width: 750px;
+    background-color: #a99cb8;
+    border: 2px solid #a99cb8;
+    border-radius: 10px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pork-rib-soup,
+.japanese-beef-curry,
+.korean-noodle-soup {
+    width: 200px;
+    height: 305px;
+    background-color: #faf5ff;
+    border: 2px solid #faf5ff;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-flex;
+}
+
+.recipe-menu a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.recipe-menu img {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.joey-gifs {
+    text-align: center;
+}
