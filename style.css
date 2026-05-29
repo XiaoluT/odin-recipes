@@ -1,6 +1,6 @@
 *,
-* ::before,
-* ::after {
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,6 +18,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* MAIN */
 
 .main {
     flex: 1;
@@ -65,69 +67,121 @@ body {
 
 
 /* RECIPE-CARDS */
-ul {
+.recipe-list {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-li {
-    width: 350px;
-    height: 350px;
+.recipe-card {
+    width: 320px;
+    min-height: 360px;
+
+    background-color: #f3ecf9;
+
     border: 2px solid #645575;
-    border-radius: 10px;
+    border-radius: 12px;
+
+    padding: 24px;
+
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
     justify-content: center;
     align-items: center;
-    background-color: #f3ecf9;
+
+    gap: 20px;
+
     text-align: center;
+
+    transition: transform 0.2s ease;
 }
 
-li img {
+.recipe-card:hover {
+    transform: translate(-5px);
+}
+
+.recipe-card img {
     width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
     border-radius: 10px;
+
+    display: block;
 }
 
-li a {
+.recipe-card a {
     color: #43187f;
+
     font-size: 20px;
     font-weight: 700;
+
+    text-decoration: none;
+}
+
+.recipe-card a:hover {
+    text-decoration: underline;
 }
 
 /* REGISTER */
 .register {
+    background-color: #f3ecf9;
+
+    border-radius: 12px;
+
+    padding: 32px;
+
     display: flex;
-    gap: 30px;
     justify-content: center;
     align-items: center;
+
+    gap: 30px;
 }
 
 .register-texts {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+
+    gap: 12px;
 }
 
-p {
+.register-texts p,
+.register-texts strong {
     font-size: 20px;
     line-height: 1.6;
 }
 
-span {
-    color: #48335d;
+.register-texts a {
+    color: #43187f;
 }
 
-button {
+.register-button {
     flex: 0 0 auto;
+
     background-color: #48335d;
     color: #faf5ff;
+
     border: 2px solid #faf5ff;
     border-radius: 10px;
-    padding: 20px;
+
+    padding: 20px 28px;
+
     font-size: 20px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+    transform: scale(1.03);
+}
+
+.register-button:hover {
+    background-color: #645575;
 }
 
 /* FOOTER */
