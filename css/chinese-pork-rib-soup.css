@@ -214,13 +214,33 @@ section {
 
 .image-group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 12px;
 }
 
-.step-image {
-    width: 100%;
+.image-frame {
+    height: 220px;
+    background-color: transparent;
+
+    border: 1px solid #c9b0da;
+
     border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.step-image {
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    display: block;
 }
 
 /* LINKS */
